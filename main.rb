@@ -63,7 +63,7 @@ def dwinner(msg)
   @replay = true
   @show_hit_or_stay_buttons = false
   session[:bankroll] -= session[:player_bet].to_i
-  @loser = "Desole #{session[:player_name]}. #{msg} "
+  @loser = "Desole #{session[:player_name]}! #{msg} "
 end
 
 def loser(msg)
