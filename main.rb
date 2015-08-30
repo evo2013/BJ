@@ -116,7 +116,6 @@ post '/set_name' do
     session[:player_name] = params[:player_name]
     session[:player_bet] = params[:bet].to_i.round
     session[:bankroll] = params[:bankroll].to_i.round
-    # session[:player_total] = params[:player_total]
     redirect '/game'
   end
 end
@@ -127,7 +126,7 @@ get '/bet' do
 end
 
 post '/bet' do
-  if params[:bet].nil? || params[:bet].to_i == 0
+  if params[:bet].nil? || params[:bet].to_i == 0 || params[:bet].to_i < 0
     @error = "Montant doit etre superieure a 0."
     halt erb(:bet)
   elsif params[:bet].to_i > session[:bankroll]
