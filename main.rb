@@ -30,7 +30,7 @@ helpers do
     total
   end
 
-  def card_image(card) ['H', '3']
+  def card_image(card)
     suit = case card[0]
       when 'H' then 'hearts'
       when 'S' then 'spades'
