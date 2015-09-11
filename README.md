@@ -1,2 +1,2 @@
 # sinatra_blackjack
-Blackjack game built on Sinatra framework. Human player versus machine dealer. Includes game play instructions.
+Un jeu de Blackjack construit sur cadre de Sinatra. Joueur humain versus machine concessionnaire. Site est disponible sur les serveurs cloud Heroku.
